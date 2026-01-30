@@ -47,3 +47,10 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
+
+ window.addEventListener("load", () => {
+    document.querySelectorAll(".social-icons a").forEach((icon, i) => {
+      setTimeout(() => icon.style.opacity = "1", i * 150);
+    });
+  });
